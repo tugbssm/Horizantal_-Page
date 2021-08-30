@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+     <!--Animation-->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+    <main>
+        <div class="left-container">
+            <div class="brand">            
+          <i class="fas fa-coffee"></i>   &nbsp; Cafee Shop 
+            </div>
+            <div class="menu">
+               <ul>
+                    <li><a href="#section1">Home</a></li>
+                    <li><a href="#section2">Gallery</a></li>
+                    <li><a href="#section3">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-container"  >
+            <section id="section1">
+                <div class="container">
+                    <!--1 LeftSide-->
+                    <div class="content">
+                        <h2>Welcome to <br> Cafee Shop</h2>
+                        <p>
+                            &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Veritatis temporibus deserunt cumque illum nisi suscipit
+                            aperiam pariatur totam laborum! Maxime, impedit fugit
+                            similique nihil ipsa ducimus minima optio repudiandae
+                            doloremque!<br><br>
+                            &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ducimus error labore saepe?Maxime, impedit fugit
+                            similique nihil ipsa ducimus minima optio repudiandae
+                            doloremque!
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Ducimus error labore saepe?Maxime, impedit fugit
+                            similique nihil ipsa ducimus minima optio repudiandae
+                            doloremque!<br><br>
+                        </p>
+                    </div>
+                    <!--1 RightSide-->
+                    <div class="image" data-aos="fade-down">
+                        <img src="images/5.jpg" alt="Photo">
+                    </div>
+                </div>
+            </section >
+            <section id="section2">
+                <div class="">
+                    <div class="photogrid">
+                        <div class="item-a" data-aos="fade-down"></div>
+                        <div class="item-b" data-aos="fade-up"></div>
+                        <div class="item-c" data-aos="fade-left"></div>
+                    </div>
+                </div>
+            </section>
+            <section id="section3">
+                <div class="content formpanel">
+                    <form>
+                        <h2>Contact Us</h2>
+                        <input type="text" placeholder="subject">
+                        <input type="email" placeholder="E-mail" required>
+                        <textarea placeholder="message"></textarea>
+                        <button class="btn">Send &nbsp;
+                            <i class="fa fa-paper-plane-o"></i>
+                        </button>
+                    </form>
+    
+                </div>
+            </section>
+            
+        </div>
+    </main>
+
+
+    <!--Link Design-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+            $('li').click(function() {
+            $(this).siblings().find('a').removeClass('focus');
+            $(this).find('a').addClass('focus');
+                  });
+    </script>
+     <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
